@@ -11,5 +11,7 @@ public class ApplicationContextTest {
 //        System.out.println(userService);
         Object userDao1 = applicationContext.getBean("userDao1");
         System.out.println(userDao1);
+        Object userDao2 = applicationContext.getBean("userDao2");
+        System.out.println(userDao2);
     }
 }

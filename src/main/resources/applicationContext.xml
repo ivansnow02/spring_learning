@@ -4,7 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--    配置UserServiceImpl-->
     <bean id="userService" class="com.is.service.impl.UserServiceImpl" init-method="init" destroy-method="destroy">
+        <constructor-arg name="name" value="1"></constructor-arg>
         <property name="userDao" ref="userDao"></property>
+
     </bean>
     <!--    配置UserDaoImpl-->
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>

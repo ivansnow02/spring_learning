@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="ApplicationContext入门">
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean初始化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
@@ -94,7 +94,7 @@
       <workItem from="1672897970991" duration="4268000" />
       <workItem from="1672906896813" duration="8000" />
       <workItem from="1672923649050" duration="268000" />
-      <workItem from="1672986438521" duration="1992000" />
+      <workItem from="1672986438521" duration="2807000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -117,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672900842668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="XmlBean初始化">
+      <created>1672989631055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672989631055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +144,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BeanFactory入门" />
     <MESSAGE value="ApplicationContext入门" />
-    <option name="LAST_COMMIT_MESSAGE" value="ApplicationContext入门" />
+    <MESSAGE value="XmlBean初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlBean初始化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

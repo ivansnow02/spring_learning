@@ -13,8 +13,11 @@ public class UserServiceImpl implements UserService, InitializingBean {
     public void destroy() {
         System.out.println("销毁...");
     }
-    public UserServiceImpl() {
-        System.out.println("UserServiceImpl实例化");
+//    public UserServiceImpl() {
+//        System.out.println("UserServiceImpl无参构造方法执行");
+//    }
+    public UserServiceImpl(String name) {
+        System.out.println("UserServiceImpl有参构造方法执行");
     }
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;

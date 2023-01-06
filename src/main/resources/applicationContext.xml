@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--    配置UserServiceImpl-->
-    <bean id="userService" class="com.is.service.impl.UserServiceImpl">
+    <bean id="userService" class="com.is.service.impl.UserServiceImpl" init-method="init" destroy-method="destroy">
         <property name="userDao" ref="userDao"></property>
     </bean>
     <!--    配置UserDaoImpl-->

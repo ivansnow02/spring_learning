@@ -8,6 +8,11 @@
         <property name="userDao" ref="userDao"></property>
 
     </bean>
+
+
+    <bean id="userDao1" class="com.is.factory.MyBeanFactory1" factory-method="userDao"></bean>
+
+
     <!--    配置UserDaoImpl-->
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
 </beans>

@@ -12,9 +12,13 @@
 
     <!--    配置工厂对象-->
     <bean id="myBeanFactory2" class="com.is.factory.MyBeanFactory2"></bean>
-    <bean id="userDao2" factory-bean="myBeanFactory2" factory-method="userDao"></bean>
+    <bean id="userDao2" factory-bean="myBeanFactory2" factory-method="userDao">
+        <constructor-arg name="name" value="1"></constructor-arg>
+    </bean>
 
-    <bean id="userDao1" class="com.is.factory.MyBeanFactory1" factory-method="userDao"></bean>
+    <bean id="userDao1" class="com.is.factory.MyBeanFactory1" factory-method="userDao">
+        <constructor-arg name="name" value="1"></constructor-arg>
+    </bean>
 
 
     <!--    配置UserDaoImpl-->

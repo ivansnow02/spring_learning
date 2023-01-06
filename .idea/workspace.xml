@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean构造方法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/factory/MyBeanFactory1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean实例工厂方法" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +58,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\eone2\IdeaProjects\spring_ioc_test01\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.is.factory" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -95,7 +93,7 @@
       <workItem from="1672897970991" duration="4268000" />
       <workItem from="1672906896813" duration="8000" />
       <workItem from="1672923649050" duration="268000" />
-      <workItem from="1672986438521" duration="3932000" />
+      <workItem from="1672986438521" duration="4298000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -132,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672990650912</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="XmlBean静态工厂方法">
+      <created>1672991670916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672991670916</updated>
+    </task>
+    <task id="LOCAL-00007" summary="XmlBean实例工厂方法">
+      <created>1672991992391</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672991992391</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +166,9 @@
     <MESSAGE value="ApplicationContext入门" />
     <MESSAGE value="XmlBean初始化" />
     <MESSAGE value="XmlBean构造方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlBean构造方法" />
+    <MESSAGE value="XmlBean静态工厂方法" />
+    <MESSAGE value="XmlBean实例工厂方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlBean实例工厂方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

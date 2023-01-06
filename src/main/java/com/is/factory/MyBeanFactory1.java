@@ -4,7 +4,7 @@ import com.is.dao.UserDao;
 import com.is.dao.impl.UserDaoImpl;
 
 public class MyBeanFactory1 {
-    public static UserDao userDao() {
+    public static UserDao userDao(String name) {
         return new UserDaoImpl();
     }
 }

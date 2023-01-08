@@ -39,46 +39,47 @@ import java.util.Set;
 //}
 public class UserServiceImpl implements UserService{
     private UserDao userDao;
-    private List<String> stringList;
-    private List<UserDao> userDaoList;
-    private Set<String> stringSet;
-    private Set<UserDao> userDaoSet;
-    private Map<String,UserDao> map;
-    private Properties properties;
-
-    public void setStringList(List<String> stringList) {
-        this.stringList = stringList;
-    }
+//    private List<String> stringList;
+//    private List<UserDao> userDaoList;
+//    private Set<String> stringSet;
+//    private Set<UserDao> userDaoSet;
+//    private Map<String,UserDao> map;
+//    private Properties properties;
+//
+//    public void setStringList(List<String> stringList) {
+//        this.stringList = stringList;
+//    }
 
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
     public void  show() {
-        System.out.println(stringList);
-        System.out.println(userDaoList);
-        System.out.println(stringSet);
-        System.out.println(userDaoSet);
-        System.out.println(map);
-        System.out.println(properties);
+//        System.out.println(stringList);
+//        System.out.println(userDaoList);
+//        System.out.println(stringSet);
+//        System.out.println(userDaoSet);
+//        System.out.println(map);
+//        System.out.println(properties);
+        System.out.println(userDao);
     }
-
-    public void setUserDaoList(List<UserDao> userDaoList) {
-        this.userDaoList = userDaoList;
-    }
-
-    public void setStringSet(Set<String> stringSet) {
-        this.stringSet = stringSet;
-    }
-
-    public void setUserDaoSet(Set<UserDao> userDaoSet) {
-        this.userDaoSet = userDaoSet;
-    }
-
-    public void setMap(Map<String, UserDao> map) {
-        this.map = map;
-    }
-
-    public void setProperties(Properties properties) {
-        this.properties = properties;
-    }
+//
+//    public void setUserDaoList(List<UserDao> userDaoList) {
+//        this.userDaoList = userDaoList;
+//    }
+//
+//    public void setStringSet(Set<String> stringSet) {
+//        this.stringSet = stringSet;
+//    }
+//
+//    public void setUserDaoSet(Set<UserDao> userDaoSet) {
+//        this.userDaoSet = userDaoSet;
+//    }
+//
+//    public void setMap(Map<String, UserDao> map) {
+//        this.map = map;
+//    }
+//
+//    public void setProperties(Properties properties) {
+//        this.properties = properties;
+//    }
 }

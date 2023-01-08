@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean FactoryBean方法">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/UserService.java" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean注入方法">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673167361229</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="XmlBean注入方法">
+      <created>1673168766298</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673168766298</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +198,8 @@
     <MESSAGE value="XmlBean静态工厂方法" />
     <MESSAGE value="XmlBean实例工厂方法" />
     <MESSAGE value="XmlBean FactoryBean方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlBean FactoryBean方法" />
+    <MESSAGE value="XmlBean注入方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlBean注入方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

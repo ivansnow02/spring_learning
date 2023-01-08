@@ -75,6 +75,6 @@
 <!--    <bean id="userDao3" class="com.is.dao.impl.UserDaoImpl"></bean>-->
 
 
-    <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byName"></bean>
+    <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byType"></bean>
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
 </beans>

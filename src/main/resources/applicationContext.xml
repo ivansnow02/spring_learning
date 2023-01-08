@@ -20,7 +20,7 @@
         <constructor-arg name="name" value="1"></constructor-arg>
     </bean>
 
-
+    <bean id="userDao3" class="com.is.factory.MyBeanFactory3"> </bean>
     <!--    配置UserDaoImpl-->
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
 </beans>

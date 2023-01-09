@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean注入方法">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean自动装配ByType">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +100,7 @@
       <workItem from="1672906896813" duration="8000" />
       <workItem from="1672923649050" duration="268000" />
       <workItem from="1672986438521" duration="4298000" />
+      <workItem from="1673244347894" duration="3744000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -161,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673168766298</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="XmlBean自动装配ByName">
+      <created>1673169121202</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673169121202</updated>
+    </task>
+    <task id="LOCAL-00011" summary="XmlBean自动装配ByType">
+      <created>1673169156196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673169156196</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +217,9 @@
     <MESSAGE value="XmlBean实例工厂方法" />
     <MESSAGE value="XmlBean FactoryBean方法" />
     <MESSAGE value="XmlBean注入方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlBean注入方法" />
+    <MESSAGE value="XmlBean自动装配ByName" />
+    <MESSAGE value="XmlBean自动装配ByType" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlBean自动装配ByType" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

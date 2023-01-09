@@ -10,7 +10,7 @@
 <!--    </bean>-->
 
 
-<!--    &lt;!&ndash;    配置工厂对象&ndash;&gt;-->
+    <!--    配置工厂对象-->
 <!--    <bean id="myBeanFactory2" class="com.is.factory.MyBeanFactory2"></bean>-->
 <!--    <bean id="userDao2" factory-bean="myBeanFactory2" factory-method="userDao">-->
 <!--        <constructor-arg name="name" value="1"></constructor-arg>-->
@@ -21,7 +21,7 @@
 <!--    </bean>-->
 
 
-<!--    &lt;!&ndash;    配置UserDaoImpl&ndash;&gt;-->
+    <!--    配置UserDaoImpl-->
 <!--    <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>-->
 
 
@@ -77,4 +77,39 @@
 
     <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byType"></bean>
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
+
+
+    <!--    配置数据源信息-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"></property>-->
+<!--        <property name="username" value="root"></property>-->
+<!--        <property name="password" value="254940Sr"></property>-->
+<!--    </bean>-->
+<!--    配置connection-->
+<!--    <bean id="clazz" class="java.lang.Class" factory-method="forName">-->
+<!--        <constructor-arg name="className" value="com.mysql.cj.jdbc.Driver"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="connection" class="java.sql.DriverManager" factory-method="getConnection" scope="prototype">-->
+<!--        <constructor-arg name="url" value="jdbc:mysql://localhost:3306/mybatis"></constructor-arg>-->
+<!--        <constructor-arg name="user" value="root"></constructor-arg>-->
+<!--        <constructor-arg name="password" value="254940Sr"></constructor-arg>-->
+<!--    </bean>-->
+
+    <!--    配置日期bean-->
+<!--    <bean id="simpleDateFormat" class="java.text.SimpleDateFormat">-->
+<!--        <constructor-arg name="pattern" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="date" factory-bean="simpleDateFormat" factory-method="parse">-->
+<!--        <constructor-arg name="source" value="2023-8-27 12:00:00"></constructor-arg>-->
+<!--    </bean>-->
+
+
+    <bean id="in" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">
+        <constructor-arg name="resource" value="mybatis-config.xml"></constructor-arg>
+    </bean>
+    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"></bean>
+    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">
+        <constructor-arg name="inputStream" ref="in"></constructor-arg>
+    </bean>
 </beans>

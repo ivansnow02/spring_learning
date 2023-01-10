@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring配置非自定义Bean">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/impl/PersonDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/MyBeanDefinitionRegistryPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/MyBeanFactoryPostProcessor.java" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring BeanFactoryPostProcessor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
@@ -103,7 +99,7 @@
       <workItem from="1672923649050" duration="268000" />
       <workItem from="1672986438521" duration="4298000" />
       <workItem from="1673244347894" duration="4482000" />
-      <workItem from="1673332029266" duration="1636000" />
+      <workItem from="1673332029266" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -189,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673248282888</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="XmlSpring BeanFactoryPostProcessor">
+      <created>1673333859914</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673333859914</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +233,8 @@
     <MESSAGE value="XmlBean自动装配ByName" />
     <MESSAGE value="XmlBean自动装配ByType" />
     <MESSAGE value="XmlSpring配置非自定义Bean" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring配置非自定义Bean" />
+    <MESSAGE value="XmlSpring BeanFactoryPostProcessor" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring BeanFactoryPostProcessor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

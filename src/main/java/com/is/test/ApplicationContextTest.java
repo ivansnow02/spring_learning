@@ -1,19 +1,9 @@
 package com.is.test;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import com.is.service.UserService;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Connection;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ApplicationContextTest {
     public static void main(String[] args) throws IOException {
@@ -28,7 +18,6 @@ public class ApplicationContextTest {
 //        userService.show();
 
 
-
 //        DruidDataSource dataSource = new DruidDataSource();
 //        dataSource.setDriverClassName();
 //        dataSource.setUrl();
@@ -40,10 +29,8 @@ public class ApplicationContextTest {
 //        System.out.println(connection);
 
 
-
 //        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //        Date date = simpleDateFormat.parse("2023-8-27 12:00:00");
-
 
 
 //        Object date = applicationContext.getBean("date");

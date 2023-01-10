@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlBean自动装配ByType">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring配置非自定义Bean">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/impl/PersonDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/MyBeanDefinitionRegistryPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/MyBeanFactoryPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -100,7 +102,8 @@
       <workItem from="1672906896813" duration="8000" />
       <workItem from="1672923649050" duration="268000" />
       <workItem from="1672986438521" duration="4298000" />
-      <workItem from="1673244347894" duration="3744000" />
+      <workItem from="1673244347894" duration="4482000" />
+      <workItem from="1673332029266" duration="1636000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -179,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673169156196</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="XmlSpring配置非自定义Bean">
+      <created>1673248282888</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673248282888</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +229,8 @@
     <MESSAGE value="XmlBean注入方法" />
     <MESSAGE value="XmlBean自动装配ByName" />
     <MESSAGE value="XmlBean自动装配ByType" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlBean自动装配ByType" />
+    <MESSAGE value="XmlSpring配置非自定义Bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring配置非自定义Bean" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

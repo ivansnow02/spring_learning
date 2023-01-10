@@ -18,7 +18,7 @@ import java.util.Date;
 public class ApplicationContextTest {
     public static void main(String[] args) throws IOException {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-//        UserService userService = (UserService) applicationContext.getBean("userService");
+//        Object userService = applicationContext.getBean("userService");
 //        System.out.println(userService);
 //        Object userDao1 = applicationContext.getBean("userDao1");
 //        System.out.println(userDao1);
@@ -57,11 +57,13 @@ public class ApplicationContextTest {
 //        //实例工厂方法
 //        SqlSessionFactory sqlSessionFactory = builder.build(in);
 
-        SqlSessionFactory sqlSessionFactory =(SqlSessionFactory) applicationContext.getBean("sqlSessionFactory");
-        System.out.println(sqlSessionFactory);
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-        System.out.println(sqlSession);
+//        SqlSessionFactory sqlSessionFactory =(SqlSessionFactory) applicationContext.getBean("sqlSessionFactory");
+//        System.out.println(sqlSessionFactory);
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        System.out.println(sqlSession);
 
 
+        Object personDao = applicationContext.getBean("personDao");
+        System.out.println(personDao);
     }
 }

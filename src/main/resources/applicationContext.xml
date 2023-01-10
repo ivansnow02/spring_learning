@@ -105,11 +105,15 @@
 <!--    </bean>-->
 
 
-    <bean id="in" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">
-        <constructor-arg name="resource" value="mybatis-config.xml"></constructor-arg>
-    </bean>
-    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"></bean>
-    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">
-        <constructor-arg name="inputStream" ref="in"></constructor-arg>
-    </bean>
+<!--    <bean id="in" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">-->
+<!--        <constructor-arg name="resource" value="mybatis-config.xml"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"></bean>-->
+<!--    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">-->
+<!--        <constructor-arg name="inputStream" ref="in"></constructor-arg>-->
+<!--    </bean>-->
+
+
+<!--    <bean class="com.is.processor.MyBeanFactoryPostProcessor"></bean>-->
+    <bean class="com.is.processor.MyBeanDefinitionRegistryPostProcessor"></bean>
 </beans>

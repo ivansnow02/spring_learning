@@ -75,8 +75,9 @@
     <!--    <bean id="userDao3" class="com.is.dao.impl.UserDaoImpl"></bean>-->
 
 
-    <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byType"></bean>
+<!--    <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byType"></bean>-->
     <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
+    <bean id="userService" class="com.is.service.impl.UserServiceImpl"></bean>
 
 
     <!--    配置数据源信息-->
@@ -115,5 +116,8 @@
 
 
     <!--    <bean class="com.is.processor.MyBeanFactoryPostProcessor"></bean>-->
-    <bean class="com.is.processor.MyBeanDefinitionRegistryPostProcessor"></bean>
+<!--    <bean class="com.is.processor.MyBeanDefinitionRegistryPostProcessor"></bean>-->
+<!--    <bean class="com.is.processor.MyBeanPostProcessor"></bean>-->
+
+<!--    <bean class="com.is.processor.TimeLogBeanPostProcessor"></bean>-->
 </beans>

@@ -76,17 +76,10 @@
 
 
 <!--    <bean id="userService" class="com.is.service.impl.UserServiceImpl" autowire="byType"></bean>-->
-    <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>
-    <bean id="userService" class="com.is.service.impl.UserServiceImpl"></bean>
+<!--    <bean id="userDao" class="com.is.dao.impl.UserDaoImpl"></bean>-->
 
 
-    <!--    配置数据源信息-->
-    <!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
-    <!--        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>-->
-    <!--        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"></property>-->
-    <!--        <property name="username" value="root"></property>-->
-    <!--        <property name="password" value="254940Sr"></property>-->
-    <!--    </bean>-->
+
     <!--    配置connection-->
     <!--    <bean id="clazz" class="java.lang.Class" factory-method="forName">-->
     <!--        <constructor-arg name="className" value="com.mysql.cj.jdbc.Driver"></constructor-arg>-->
@@ -120,4 +113,25 @@
 <!--    <bean class="com.is.processor.MyBeanPostProcessor"></bean>-->
 
 <!--    <bean class="com.is.processor.TimeLogBeanPostProcessor"></bean>-->
+
+    <!--        配置数据源信息-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="254940Sr"></property>
+    </bean>
+<!--配置SqlSessionFactoryBean, 作用将SqlSessionFactory存储到spring容器-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+<!--    MapperScannerConfigurer，作用扫描指定的包, 产生Mapper对象存储到spring容器-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.is.mapper"></property>
+    </bean>
+    <bean id="userService" class="com.is.service.impl.UserServiceImpl">
+    <property name="userMapper" ref="userMapper"></property>
+</bean>
+
 </beans>

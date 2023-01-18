@@ -1,6 +1,8 @@
 package com.is.service.impl;
 
 import com.is.dao.UserDao;
+import com.is.mapper.UserMapper;
+import com.is.pojo.User;
 import com.is.service.UserService;
 import jakarta.servlet.ServletContext;
 import org.springframework.beans.BeansException;
@@ -11,6 +13,8 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.web.context.ServletContextAware;
+
+import java.util.List;
 
 
 //public class UserServiceImpl implements UserService, InitializingBean {
@@ -40,9 +44,9 @@ import org.springframework.web.context.ServletContextAware;
 //        System.out.println("afterPropertiesSet执行...");
 //    }
 //}
-public class UserServiceImpl implements UserService, ServletContextAware, ApplicationContextAware, BeanFactoryAware, BeanNameAware {
+public class UserServiceImpl implements UserService {
 
-    private UserDao userDao;
+//    private UserDao userDao;
 //    private List<String> stringList;
 //    private List<UserDao> userDaoList;
 //    private Set<String> stringSet;
@@ -53,10 +57,14 @@ public class UserServiceImpl implements UserService, ServletContextAware, Applic
 //    public void setStringList(List<String> stringList) {
 //        this.stringList = stringList;
 //    }
-
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
+    private UserMapper userMapper;
+    public void setUserMapper(UserMapper userMapper) {
+        this.userMapper = userMapper;
     }
+
+//    public void setUserDao(UserDao userDao) {
+//        this.userDao = userDao;
+//    }
 
     public void show() {
 //        System.out.println(stringList);
@@ -65,28 +73,32 @@ public class UserServiceImpl implements UserService, ServletContextAware, Applic
 //        System.out.println(userDaoSet);
 //        System.out.println(map);
 //        System.out.println(properties);
-        System.out.println(userDao);
+//        System.out.println(userDao);
+        List<User> all = userMapper.findAll();
+        for (User user : all) {
+            System.out.println(user);
+        }
     }
 
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println(applicationContext);
-    }
-
-    @Override
-    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println(beanFactory);
-    }
-
-    @Override
-    public void setBeanName(String name) {
-        System.out.println(name);
-    }
-
-    @Override
-    public void setServletContext(ServletContext servletContext) {
-        System.out.println(servletContext);
-    }
+//    @Override
+//    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+//        System.out.println(applicationContext);
+//    }
+//
+//    @Override
+//    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+//        System.out.println(beanFactory);
+//    }
+//
+//    @Override
+//    public void setBeanName(String name) {
+//        System.out.println(name);
+//    }
+//
+//    @Override
+//    public void setServletContext(ServletContext servletContext) {
+//        System.out.println(servletContext);
+//    }
 
 
 //

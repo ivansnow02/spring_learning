@@ -1,6 +1,8 @@
 package com.is.test;
 
 import com.is.dao.UserDao;
+import com.is.service.UserService;
+import com.is.service.impl.UserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +11,8 @@ import java.io.IOException;
 public class ApplicationContextTest {
     public static void main(String[] args) throws IOException, InterruptedException {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-//        Object userService = applicationContext.getBean("userService");
+        UserService userService = applicationContext.getBean(UserService.class);
+        userService.show();
 //        System.out.println(userService);
 //        Object userDao1 = applicationContext.getBean("userDao1");
 //        System.out.println(userDao1);
@@ -53,7 +56,7 @@ public class ApplicationContextTest {
 
 //        Object personDao = applicationContext.getBean("personDao");
 //        System.out.println(personDao);
-        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
-        userDao.show();
+//        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
+//        userDao.show();
     }
 }

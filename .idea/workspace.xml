@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring BeanPostProcessor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/MyBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/processor/TimeLogBeanPostProcessor.java" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring IoC整体流程">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/test/MybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/is/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,11 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "spring.configuration.checksum": "4e7551ac578435a97582b5e886ea8e51"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,9 +78,22 @@
       <recent name="com.is.factory" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.ApplicationContextTest">
     <configuration name="ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.is.test.ApplicationContextTest" />
+      <module name="spring_ioc_test01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.is.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.is.test.MybatisTest" />
       <module name="spring_ioc_test01" />
       <extension name="coverage">
         <pattern>
@@ -90,6 +108,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.ApplicationContextTest" />
+        <item itemvalue="应用程序.MybatisTest" />
       </list>
     </recent_temporary>
   </component>
@@ -112,7 +131,7 @@
       <workItem from="1673852289160" duration="872000" />
       <workItem from="1673922501869" duration="11000" />
       <workItem from="1673927499064" duration="618000" />
-      <workItem from="1674026711576" duration="1064000" />
+      <workItem from="1674026711576" duration="5097000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -212,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673335043994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="XmlSpring IoC整体流程">
+      <created>1674028568688</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674028568688</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +280,18 @@
     <MESSAGE value="XmlBean自动装配ByType" />
     <MESSAGE value="XmlSpring配置非自定义Bean" />
     <MESSAGE value="XmlSpring BeanFactoryPostProcessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring BeanFactoryPostProcessor" />
+    <MESSAGE value="XmlSpring IoC整体流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring IoC整体流程" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

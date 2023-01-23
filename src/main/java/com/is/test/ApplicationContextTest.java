@@ -10,6 +10,7 @@ import java.io.IOException;
 
 public class ApplicationContextTest {
     public static void main(String[] args) throws IOException, InterruptedException {
+
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = applicationContext.getBean(UserService.class);
         userService.show();

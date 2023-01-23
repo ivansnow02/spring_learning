@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="XmlSpring IoC整体流程">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/is/test/MybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/is/mapper/UserMapper.xml" afterDir="false" />
+    <list default="true" id="9839165f-2331-442c-9457-31c8e6e7c687" name="变更" comment="Xml MyBatis-Spring">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/java/com/is/ApplicationContextTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/java/com/is/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/java/com/is/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/java/com/is/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring_ioc_test02/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/is/test/ApplicationContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../spring_ioc_test02" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,6 +47,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:/apache-maven-3.8.6" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="D:\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -56,8 +64,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/eone2/IdeaProjects/spring_ioc_test01/src/main/resources",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/eone2/IdeaProjects/spring_ioc_test02/src/main/resources",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -72,13 +82,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eone2\IdeaProjects\spring_ioc_test02\src\main\resources" />
+      <recent name="C:\Users\eone2\IdeaProjects\spring_ioc_test02" />
+      <recent name="C:\Users\eone2\IdeaProjects\spring_ioc_test02\src\main\java\com\is" />
       <recent name="C:\Users\eone2\IdeaProjects\spring_ioc_test01\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eone2\IdeaProjects\" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.is" />
       <recent name="com.is.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ApplicationContextTest">
+  <component name="RunManager" selected="应用程序.com.is.ApplicationContextTest">
     <configuration name="ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.is.test.ApplicationContextTest" />
       <module name="spring_ioc_test01" />
@@ -105,8 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.is.ApplicationContextTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.is.ApplicationContextTest" />
+      <module name="spring_ioc_test02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.is.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.com.is.ApplicationContextTest" />
         <item itemvalue="应用程序.ApplicationContextTest" />
         <item itemvalue="应用程序.MybatisTest" />
       </list>
@@ -131,7 +162,10 @@
       <workItem from="1673852289160" duration="872000" />
       <workItem from="1673922501869" duration="11000" />
       <workItem from="1673927499064" duration="618000" />
-      <workItem from="1674026711576" duration="5097000" />
+      <workItem from="1674026711576" duration="5486000" />
+      <workItem from="1674200168363" duration="3163000" />
+      <workItem from="1674454252374" duration="406000" />
+      <workItem from="1674454681398" duration="950000" />
     </task>
     <task id="LOCAL-00001" summary="BeanFactory入门">
       <created>1672899527298</created>
@@ -238,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674028568688</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Xml MyBatis-Spring">
+      <created>1674032862451</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674032862451</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +322,8 @@
     <MESSAGE value="XmlSpring配置非自定义Bean" />
     <MESSAGE value="XmlSpring BeanFactoryPostProcessor" />
     <MESSAGE value="XmlSpring IoC整体流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="XmlSpring IoC整体流程" />
+    <MESSAGE value="Xml MyBatis-Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Xml MyBatis-Spring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -296,5 +338,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_ioc_test01$ApplicationContextTest.ic" NAME="ApplicationContextTest 覆盖结果" MODIFIED="1674200559777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.is.test.*</FILTER>
+    </SUITE>
   </component>
 </project>
